@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Make the GitHub section of the index page for pumbaa.ch
+#
+# Author: Pumbaa <webmaster@pumbaa.ch>
+# Date: Mars 23, 2026
+# License: MIT
+
+. ./colors || exit 1
+
+readarray -t GITHUB << "EOF"
+Kaamelott Bot | Robot Discord qui joue des répliques de Kaamelott | github.com/pumbaa666/KaamelottBot
+TReSS | Renommer vos fichiers en batch | github.com/pumbaa666/TReSS
+Google Cal - Quick Entry | Entrer des Rendez-vous Google à la chaîne | github.com/pumbaa666/google-calendar-quick-entry
+Google Cal - Rendez Vous | Chercher et filtrer vos Rendez-vous Google | github.com/pumbaa666/google-calendar-rdv
+Clicker | Clicker automatique léger, en Java | github.com/pumbaa666/java-clicker
+Scheduler Simulator | Mon projet de diplôme d'école d'ingé' | github.com/pumbaa666/scheduler-simulator
+Signal Web | Whatsapp Web mais pour Signal. En NodeJS, dockerisé | github.com/pumbaa666/signal-web
+Cadeaux Bonux | Divers scripts Bash | github.com/pumbaa666/bash/tree/main
+EOF
+
+UNDERLINE=$'\x1b[3m'
+
+for line in "${GITHUB[@]}"; do
+	IFS='|' read -r name desc url <<< "$line"
+
+	echo -n "$COLOR3$name$RST"
+	echo -n '|'
+	echo -n "$COLOR5$desc$RST"
+	echo -n '|'
+	echo -n "$UNDERLINE$COLOR1$url$RST"
+	echo
+done

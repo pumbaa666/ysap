@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Make the blogs section of the index page for pumbaa.ch
+#
+# Author: Pumbaa <webmaster@pumbaa.ch>
+# Date: Mars 23, 2026
+# License: MIT
+
+. ./colors || exit 1
+
+readarray -t FORUMS << "EOF"
+PafPasteque | La bonne vieille team PAF | paf.pumbaa.ch
+Guilde du Jeu | WoW Burning Crusade | gdj.pumbaa.ch
+Acendium | WoW Vanilla | acendium.pumbaa.ch
+EOF
+
+UNDERLINE=$'\x1b[3m'
+
+for line in "${FORUMS[@]}"; do
+	IFS='|' read -r name desc url <<< "$line"
+
+	echo -n "$COLOR3$name$RST"
+	echo -n '|'
+	echo -n "$COLOR5$desc$RST"
+	echo -n '|'
+	echo -n "$UNDERLINE$COLOR1$url$RST"
+	echo
+done

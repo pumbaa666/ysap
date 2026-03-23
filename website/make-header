@@ -6,6 +6,9 @@
 # Author: Dave Eddy <dave@daveeddy.com>
 # Date: March 17, 2024
 # License: MIT
+#
+# # Contributors
+# - Pumbaa <webmaster@pumbaa.ch>
 
 . ./colors || exit
 . ./tools/repeat-char || exit
@@ -24,11 +27,10 @@ mapfile -t logo < <(./make-logo)
 
 description=(
 	""
-	"${COLOR5}You Suck at Programming$RST"
-	"${COLOR5}Episodes and guide by dave eddy$RST"
-	"${COLOR1}https://ysap.sh | https://daveeddy.com$RST"
-	''
-	"${COLOR5}src: ${COLOR1}https://github.com/bahamas10/ysap$RST"
+	"${COLOR5}Bienvenue sur le portail de pumbaa.ch$RST"
+	"${COLOR5}mon site fourre-tout$RST"
+	"${COLOR1}https://pumbaa.ch$RST"
+	""
 )
 
 len=${#logo[@]}

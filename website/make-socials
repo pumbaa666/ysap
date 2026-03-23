@@ -5,15 +5,15 @@
 # Author: Dave Eddy <dave@daveeddy.com>
 # Date: April 05, 2025
 # License: MIT
+#
+# # Contributors
+# - Pumbaa <webmaster@pumbaa.ch>
 
 . ./colors || exit
 
 readarray -t SOCIALS << "EOF"
-Instagram|https://ysap.sh/instagram
-YouTube|https://ysap.sh/youtube
-Patreon|https://ysap.sh/patreon
-Discord|https://ysap.sh/discord
-Twitch|https://ysap.sh/twitch
+Github        |https://github.com/pumbaa666/
+YouTube       |https://www.youtube.com/@pumbaa667
 EOF
 
 UNDERLINE=$'\x1b[3m'

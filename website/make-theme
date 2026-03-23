@@ -9,6 +9,7 @@
 #
 # # Contributors
 # - Dave Eddy <ysap@daveeddy.com>
+# - Pumbaa <webmaster@pumbaa.ch>
 
 # these are in the form of "OSC 4 ANSI Code" => "Color"
 declare -A theme=(
@@ -41,6 +42,6 @@ for code in "${!theme[@]}"; do
 
 	printf '\e]%s;%s\e\\' "$code" "$color"
 done
-echo done
+echo "done"
 
 ./make-logo | ./tools/box -hp 1 -T plain

@@ -1,17 +1,21 @@
-YSAP Website
+Pumbaa's Home Page
 ============
 
-https://ysap.sh
+Forked from https://github.com/bahamas10/ysap
 
+HTML version :
+https://pumbaa.ch
+
+Bash version :
 ```
-curl ysap.sh
+curl https://pumbaa.ch
 ```
 
 Usage
 -----
 
 ```
-$ make help
+make help
 make build         default target, builds the site into ./_site
 make check-deps    check to ensure needed dependencies are installed
 make check         check tools syntax using shellcheck

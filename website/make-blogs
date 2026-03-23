@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#
+# Make the blogs section of the index page for pumbaa.ch
+#
+# Author: Pumbaa <webmaster@pumbaa.ch>
+# Date: Mars 23, 2026
+# License: MIT
+
+. ./colors || exit 1
+
+readarray -t BLOGS << "EOF"
+Geekeries, tuto, Linux, gaming, ...      | geek.pumbaa.ch
+Cuisine et artisanats       | cuisine.pumbaa.ch
+Voyages (surtout au Japon)  | japon.pumbaa.ch
+EOF
+
+UNDERLINE=$'\x1b[3m'
+
+full_text=""
+for line in "${BLOGS[@]}"; do
+	IFS='|' read -r name url <<< "$line"
+
+	echo -n "$COLOR5$name$RST"
+	echo -n '|'
+	echo -n "$UNDERLINE$COLOR1$url$RST"
+	echo
+done
