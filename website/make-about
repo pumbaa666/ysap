@@ -6,6 +6,9 @@
 # Author: Dave Eddy <dave@daveeddy.com>
 # Date: April 05, 2025
 # License: MIT
+#
+# # Contributors
+# - Pumbaa <webmaster@pumbaa.ch>
 
 . ./colors || exit 1
 
@@ -13,9 +16,6 @@ readarray -t ABOUT << "EOF"
 Plop, c'est moi Pumbaa :
 un passionné d'informatique, de jeux vidéo,
 de culture japonaise, et de plein d'autres trucs.
-
-J'aime partager mes découvertes et créations avec les autres, 
-que ce soit à travers mes blogs, ou mes projets GitHub.
 EOF
 
 for line in "${ABOUT[@]}"; do

@@ -19,6 +19,6 @@
 
 ./make-body
 
-./make-legend # -f # -f for full (includes Resources and Extras)
+# ./make-legend # -f # -f for full (includes Resources and Extras)
 
 } | ./tools/rtrim-ansi-aware

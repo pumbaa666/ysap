@@ -13,7 +13,7 @@
 
 readarray -t SOCIALS << "EOF"
 Github        |https://github.com/pumbaa666/
-YouTube       |https://www.youtube.com/@pumbaa667
+YouTube       |https://www.youtube.com/@pumbaa667               
 EOF
 
 UNDERLINE=$'\x1b[3m'

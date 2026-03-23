@@ -27,8 +27,8 @@ mapfile -t logo < <(./make-logo)
 
 description=(
 	""
-	"${COLOR5}Bienvenue sur le portail de pumbaa.ch$RST"
-	"${COLOR5}mon site fourre-tout$RST"
+	"${COLOR5}Bienvenue sur le portail de pumbaa.ch mon site fourre-tout$RST"
+	""
 	"${COLOR1}https://pumbaa.ch$RST"
 	""
 )
