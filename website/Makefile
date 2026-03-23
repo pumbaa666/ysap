@@ -79,4 +79,4 @@ clean: ## remove any generated files
 
 .PHONY: deploy
 deploy: ## deploy the site (using rsync)
-	rsync -avh --delete ./_site/ web:/var/www/ysap.sh/
+	scp -rP 19992 _site/index.txt  pumbaa@pumbaa.ch:/home/pumbaa
