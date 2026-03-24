@@ -15,9 +15,9 @@
 readarray -t ABOUT << "EOF"
 Plop, c'est moi Pumbaa :
 un passionné d'informatique, de jeux vidéo,
-de culture japonaise, et de plein d'autres trucs.             
+de culture japonaise, et de plein d'autres trucs.    
 EOF
 
 for line in "${ABOUT[@]}"; do
-	echo "$COLOR1$line$RST"
+	echo "$COLOR5$line$RST"
 done

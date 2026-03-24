@@ -9,7 +9,7 @@
 . ./colors || exit 1
 
 readarray -t BLOGS << "EOF"
-Geekeries, tuto, Linux, gaming, ...      | geek.pumbaa.ch
+Geekeries, tuto, Linux, gaming,…| geek.pumbaa.ch
 Cuisine et artisanats       | cuisine.pumbaa.ch
 Voyages (surtout au Japon)  | japon.pumbaa.ch
 EOF
@@ -20,7 +20,7 @@ full_text=""
 for line in "${BLOGS[@]}"; do
 	IFS='|' read -r name url <<< "$line"
 
-	echo -n "$COLOR5$name$RST"
+	echo -n "$COLOR3$name$RST"
 	echo -n '|'
 	echo -n "$UNDERLINE$COLOR1$url$RST"
 	echo

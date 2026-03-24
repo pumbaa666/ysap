@@ -9,13 +9,13 @@
 . ./colors || exit 1
 
 readarray -t GITHUB << "EOF"
-Kaamelott Bot | Robot Discord qui joue des répliques de Kaamelott | github.com/pumbaa666/KaamelottBot
+Kaamelott Bot | Kaamelott s'invite dans Discord | github.com/pumbaa666/KaamelottBot
 TReSS | Renommer vos fichiers en batch | github.com/pumbaa666/TReSS
 Google Cal - Quick Entry | Entrer des Rendez-vous Google à la chaîne | github.com/pumbaa666/google-calendar-quick-entry
 Google Cal - Rendez Vous | Chercher et filtrer vos Rendez-vous Google | github.com/pumbaa666/google-calendar-rdv
 Clicker | Clicker automatique léger, en Java | github.com/pumbaa666/java-clicker
 Scheduler Simulator | Mon projet de diplôme d'école d'ingé' | github.com/pumbaa666/scheduler-simulator
-Signal Web | Whatsapp Web mais pour Signal. En NodeJS, dockerisé | github.com/pumbaa666/signal-web
+Signal Web | Whatsapp Web mais pour Signal, dockerisé | github.com/pumbaa666/signal-web
 Cadeaux Bonux | Divers scripts Bash | github.com/pumbaa666/bash/tree/main
 EOF
 
