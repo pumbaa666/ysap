@@ -9,14 +9,14 @@
 . ./colors || exit 1
 
 readarray -t GITHUB << "EOF"
-Kaamelott Bot | Kaamelott s'invite dans Discord | github.com/pumbaa666/KaamelottBot
-TReSS | Renommer vos fichiers en batch | github.com/pumbaa666/TReSS
-Google Cal - Quick Entry | Entrer des Rendez-vous Google à la chaîne | github.com/pumbaa666/google-calendar-quick-entry
-Google Cal - Rendez Vous | Chercher et filtrer vos Rendez-vous Google | github.com/pumbaa666/google-calendar-rdv
-Clicker | Clicker automatique léger, en Java | github.com/pumbaa666/java-clicker
-Scheduler Simulator | Mon projet de diplôme d'école d'ingé' | github.com/pumbaa666/scheduler-simulator
-Signal Web | Whatsapp Web mais pour Signal, dockerisé | github.com/pumbaa666/signal-web
-Cadeaux Bonux | Divers scripts Bash | github.com/pumbaa666/bash/tree/main
+Kaamelott Bot | Kaamelott s'invite dans Discord | https://github.com/pumbaa666/KaamelottBot
+TReSS | Renommer vos fichiers en batch | https://github.com/pumbaa666/TReSS
+Google Cal - Quick Entry  | Entrer des Rendez-vous Google à la chaîne | https://github.com/pumbaa666/google-calendar-quick-entry
+Google Cal - Rendez Vous | Chercher et filtrer vos Rendez-vous Google | https://github.com/pumbaa666/google-calendar-rdv
+Clicker | Clicker automatique léger, en Java | https://github.com/pumbaa666/java-clicker
+Scheduler Simulator | Mon projet de diplôme d'école d'ingé'       | https://github.com/pumbaa666/scheduler-simulator
+Signal Web | Whatsapp Web mais pour Signal, dockerisé | https://github.com/pumbaa666/signal-web
+Cadeaux Bonux | Divers scripts Bash | https://github.com/pumbaa666/bash
 EOF
 
 UNDERLINE=$'\x1b[3m'

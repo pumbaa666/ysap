@@ -9,9 +9,9 @@
 . ./colors || exit 1
 
 readarray -t FORUMS << "EOF"
-PafPasteque | La bonne vieille team PAF | paf.pumbaa.ch
-Guilde du Jeu | WoW Burning Crusade | gdj.pumbaa.ch
-Acendium | WoW Vanilla | acendium.pumbaa.ch
+PafPasteque | La bonne vieille team PAF | https://paf.pumbaa.ch
+Guilde du Jeu | WoW Burning Crusade | https://gdj.pumbaa.ch
+Acendium | WoW Vanilla | https://acendium.pumbaa.ch
 EOF
 
 UNDERLINE=$'\x1b[3m'

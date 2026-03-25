@@ -42,11 +42,11 @@ function print_two_boxes() {
 	done
 }
 
-mapfile -t ABOUT < <(./make-about | ./tools/box -t About -hp 1 -vp 1 -bc "$COLOR4" -tc "$COLOR5" -s '|')
-mapfile -t SOCIALS < <(./make-socials | ./tools/box -t Socials -hp 1 -vp 1 -bc "$COLOR4" -tc "$COLOR5" -s '|')
+mapfile -t ABOUT < <(./make-about | ./tools/box -t "A propos" -hp 1 -vp 1 -bc "$COLOR4" -tc "$COLOR5" -s '|')
+mapfile -t SOCIALS < <(./make-socials | ./tools/box -t "Rézos" -hp 1 -vp 1 -bc "$COLOR4" -tc "$COLOR5" -s '|')
 ( IFS='|'; print_two_boxes "${ABOUT[*]}" "${SOCIALS[*]}" )
 
-mapfile -t BLOGS < <(./make-blogs | ./tools/box -t Blogs -hp 1 -vp 1 -bc "$COLOR4" -tc "$COLOR5" -s '|')
+mapfile -t BLOGS < <(./make-blogs | ./tools/box -t "Mes blogs" -hp 1 -vp 1 -bc "$COLOR4" -tc "$COLOR5" -s '|')
 mapfile -t FORUMS < <(./make-forums | ./tools/box -t "Vieux forums" -hp 1 -vp 1 -bc "$COLOR4" -tc "$COLOR5" -s '|')
 ( IFS='|'; print_two_boxes "${BLOGS[*]}" "${FORUMS[*]}" )
 

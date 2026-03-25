@@ -9,9 +9,9 @@
 . ./colors || exit 1
 
 readarray -t BLOGS << "EOF"
-Geekeries, tuto, Linux, gaming,…| geek.pumbaa.ch
-Cuisine et artisanats       | cuisine.pumbaa.ch
-Voyages (surtout au Japon)  | japon.pumbaa.ch
+Tuto, Linux, gaming,…| https://geek.pumbaa.ch
+Cuisine et artisanats     | https://cuisine.pumbaa.ch
+Voyages (surtout au Japon)| https://japon.pumbaa.ch
 EOF
 
 UNDERLINE=$'\x1b[3m'
